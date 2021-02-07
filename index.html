@@ -16,16 +16,28 @@
     <main class="main">
       <div class="main-wrapper">
         <div class="main-left">
-          <div class="logo"></div>
+          <div class="logo">
+            <svg class="icon-logo">
+              <use xlink:href="sprite.svg#logo"></use>
+            </svg>
+          </div>
           <!-- /.logo -->
         </div>
 
         <div class="main-right">
           <ul class="navbar">
-            <li class="navbar__link">Experience</li>
-            <li class="navbar__link">Work</li>
-            <li class="navbar__link">Photography</li>
-            <li class="navbar__link">Contact</li>
+            <li class="navbar__title">
+              <a class="link navbar__link" href="#">Experience</a>
+            </li>
+            <li class="navbar__title">
+              <a class="link navbar__link" href="#">Work</a>
+            </li>
+            <li class="navbar__title">
+              <a class="link navbar__link" href="#">Photography</a>
+            </li>
+            <li class="navbar__title">
+              <a class="link navbar__link" href="#">Contact</a>
+            </li>
           </ul>
           <div class="hero">
             <div class="hero__info">
@@ -52,7 +64,9 @@
           <!-- /.hero -->
         </div>
         <!-- /.main-right -->
+        <div class="robin"></div>
       </div>
+      <!-- /.main-wrapper -->
     </main>
   </body>
 </html>

@@ -1,21 +1,53 @@
 .main
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
 .main-wrapper
   display: flex;
   min-height: 900px
   position: relative
   background-color: #000
+  
+.icon-logo
+  fill: #fff
+  width: 78.24px;
+  height: 24px;
+  position: absolute
+  top: 45px;
+  left: 70px;
+  
 .main-left
   width: 540px;
-.main-right
-  width: 900px;  
-  background-color: #181823;
-  position: relative;
   
+.main-right
+  max-width: 900px;  
+  background-color: #181823;
+  position: relative; 
+  padding-right: 40px; 
 .navbar
-  &__link
+  display: grid
+  grid-template-columns: 352px 132px 88px 147px 109px
+  grid-template-rows: 88px 
+  padding-left: 0;
+  &__title
+    list-style: none
+    margin: auto;
+    &:nth-child(1)
+      grid-column: 2;
+    &:nth-child(2)
+      grid-column: 3;
+    &:nth-child(3)
+      grid-column: 4;
+    &:nth-child(4)
+      grid-column: 5;
+    
+      
+  &__link     
     color: #fff
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    
 .hero  
   &__title-text
     font-style: normal;
@@ -25,12 +57,39 @@
     display: flex;
     align-items: center;
     color: #fff
-  &__title--another-color
-    display: contents
-    color: #8B8B91
+    
+  &__title
+    position: relative;
+    z-index: 20;
+    &--another-color
+      font-style: normal;
+      font-weight: bold;
+      font-size: 78px;
+      line-height: 94px;
+      display: flex;
+      align-items: center;
+      display: contents
+      color: #8B8B91
+      
   &__under-title
+    position: relative;
+    z-index: 20;
     &--text
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%
       color: #fff
   &__info
-    width: 738px;
-    height: 368px;
+    max-width: 738px;
+    min-height: 368px;
+    margin-left: 122px;
+    
+.robin
+  width: 750px;
+  height: 650px;
+  position: absolute
+  top: 160px;
+  left: 0;
+  background-image: url(../img/robin.jpg);
+  background-repeat: no-repeat;
+  
