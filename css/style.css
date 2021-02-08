@@ -529,6 +529,50 @@ body {
   z-index: 10;
 }
 
+@media screen and (max-width: 1200px) {
+  .robin {
+    width: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: contain;
+  }
+  .hero__info {
+    max-width: 600px;
+  }
+  .hero__title {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  .main__left-background {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    background-color: #000000;
+  }
+  .main {
+    background-color: #000000;
+  }
+  .main__left-background {
+    display: none;
+  }
+  .hero__title {
+    font-size: 56px;
+    line-height: 67px;
+  }
+  .hero__info {
+    width: 500px;
+    top: 130px;
+  }
+  .robin {
+    width: 384px;
+    height: 650px;
+    background-image: url(../img/robin768.jpg);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     background-color: #000000;
