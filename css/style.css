@@ -528,4 +528,36 @@ body {
   background-repeat: no-repeat;
   z-index: 10;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: #000000;
+  }
+  .icon-logo {
+    left: 40px;
+  }
+  .navbar {
+    padding-right: 40px;
+  }
+  .main {
+    background-color: #000000;
+  }
+  .robin {
+    width: 384px;
+    height: 650px;
+    background-image: url(../img/robin768.jpg);
+  }
+  .hero__title {
+    font-size: 56px;
+    line-height: 67px;
+  }
+  .hero__info {
+    width: 408px;
+    height: 475px;
+    top: 128px;
+  }
+  .main__left-background {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
