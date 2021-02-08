@@ -1,33 +1,38 @@
+.header
+  background-color: #181823;
 .main
-  max-width: 1440px;
-  margin: auto;
+  background-color: #181823;
 .main-wrapper
   display: flex;
-  min-height: 900px
+  min-height: 813px
   position: relative
-  background-color: #000
+  max-width: 1440px;
+  margin: auto;
   
 .icon-logo
   fill: #fff
   width: 78.24px;
   height: 24px;
   position: absolute
-  top: 45px;
-  left: 70px;
-  
-.main-left
+  top: 32px;
+  left: 72px;
+  z-index: 10;
+.main__left-background
   width: 540px;
+  min-height: 899px;
+  top: -87px;
+  background-color: #000;
+  position: absolute;
+  z-index: 5;
   
-.main-right
-  max-width: 900px;  
-  background-color: #181823;
-  position: relative; 
-  padding-right: 40px; 
 .navbar
   display: grid
-  grid-template-columns: 352px 132px 88px 147px 109px
+  grid-template-columns: 1fr 132px 88px 147px 109px
   grid-template-rows: 88px 
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: -1px
+ 
   &__title
     list-style: none
     margin: auto;
@@ -38,16 +43,13 @@
     &:nth-child(3)
       grid-column: 4;
     &:nth-child(4)
-      grid-column: 5;
-    
-      
+      grid-column: 5;      
   &__link     
     color: #fff
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 150%;
-    
+    line-height: 150%;    
 .hero  
   &__title-text
     font-style: normal;
@@ -57,6 +59,7 @@
     display: flex;
     align-items: center;
     color: #fff
+    margin-bottom: 32px;
     
   &__title
     position: relative;
@@ -82,14 +85,15 @@
   &__info
     max-width: 738px;
     min-height: 368px;
-    margin-left: 122px;
-    
+    position: absolute;
+    top: 169px;
+    right: 40px;
 .robin
   width: 750px;
   height: 650px;
   position: absolute
-  top: 160px;
+  top: 78px;
   left: 0;
   background-image: url(../img/robin.jpg);
   background-repeat: no-repeat;
-  
+  z-index: 10;

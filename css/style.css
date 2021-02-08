@@ -365,18 +365,22 @@ body {
   cursor: pointer;
 }
 
+.header {
+  background-color: #181823;
+}
+
 .main {
-  max-width: 1440px;
-  margin: auto;
+  background-color: #181823;
 }
 
 .main-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 900px;
+  min-height: 813px;
   position: relative;
-  background-color: #000;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .icon-logo {
@@ -384,29 +388,30 @@ body {
   width: 78.24px;
   height: 24px;
   position: absolute;
-  top: 45px;
-  left: 70px;
+  top: 32px;
+  left: 72px;
+  z-index: 10;
 }
 
-.main-left {
+.main__left-background {
   width: 540px;
-}
-
-.main-right {
-  max-width: 900px;
-  background-color: #181823;
-  position: relative;
-  padding-right: 40px;
+  min-height: 899px;
+  top: -87px;
+  background-color: #000;
+  position: absolute;
+  z-index: 5;
 }
 
 .navbar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 352px 132px 88px 147px 109px;
-      grid-template-columns: 352px 132px 88px 147px 109px;
+  -ms-grid-columns: 1fr 132px 88px 147px 109px;
+      grid-template-columns: 1fr 132px 88px 147px 109px;
   -ms-grid-rows: 88px;
       grid-template-rows: 88px;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: -1px;
 }
 
 .navbar__title {
@@ -454,6 +459,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  margin-bottom: 32px;
 }
 
 .hero__title {
@@ -491,16 +497,19 @@ body {
 .hero__info {
   max-width: 738px;
   min-height: 368px;
-  margin-left: 122px;
+  position: absolute;
+  top: 169px;
+  right: 40px;
 }
 
 .robin {
   width: 750px;
   height: 650px;
   position: absolute;
-  top: 160px;
+  top: 78px;
   left: 0;
   background-image: url(../img/robin.jpg);
   background-repeat: no-repeat;
+  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */
