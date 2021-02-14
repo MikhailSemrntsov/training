@@ -369,20 +369,6 @@ body {
   background-color: #181823;
 }
 
-.main {
-  background-color: #181823;
-}
-
-.main-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 813px;
-  position: relative;
-  max-width: 1440px;
-  margin: auto;
-}
-
 .icon-logo {
   fill: #fff;
   width: 78.24px;
@@ -391,15 +377,6 @@ body {
   top: 32px;
   left: 72px;
   z-index: 10;
-}
-
-.main__left-background {
-  width: 540px;
-  min-height: 899px;
-  top: -87px;
-  background-color: #000;
-  position: absolute;
-  z-index: 5;
 }
 
 .navbar {
@@ -461,6 +438,33 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 150%;
+}
+
+.button-visible {
+  display: none;
+}
+
+.main {
+  background-color: #181823;
+}
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 813px;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.main__left-background {
+  width: 540px;
+  min-height: 899px;
+  top: -87px;
+  background-color: #000;
+  position: absolute;
+  z-index: 5;
 }
 
 .hero__title-text {
@@ -602,6 +606,45 @@ body {
   }
   .main__left-background {
     display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .navbar {
+    -ms-grid-columns: 1fr 122px 78px 137px 99px;
+        grid-template-columns: 1fr 122px 78px 137px 99px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu {
+    width: 96%;
+    height: 88px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: -1px;
+  }
+  .navbar {
+    display: none;
+  }
+  .button-visible {
+    background-color: #000;
+    border: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+  }
+  .button-visible__menu {
+    width: 21px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-top: 5px;
+    background-color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */
