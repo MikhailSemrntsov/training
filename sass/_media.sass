@@ -54,8 +54,9 @@
       width: 408px;
       height: 475px;
       top: 128px;
-  .main__left-background
-    display: none;
+  .main
+    &__left-background
+      display: none;
 
 
 @media screen and ( max-width: 690px )
@@ -70,6 +71,7 @@
     display: flex;    
     justify-content: flex-end
     margin-bottom: -1px;
+    margin: auto;
   .navbar
     display: none;
   .button-visible
@@ -85,4 +87,25 @@
       display: block
       margin-top: 5px;
       background-color: #fff;
+
+
+@media screen and ( max-width: 480px )
+  .hero
+    &__info
+      width: 304px;
+      position: static;
+      margin: auto;
+    &__title
+      font-size: 32px;
+      line-height: 38px;
+  .robin
+    width: 360px;
+    height: 288px;
+    background-image: url(../img/robin360.jpg)
+    position: static
+  .main
+    &-wrapper
+      width: 360px;
+      min-height: 652px
+      flex-direction: column-reverse
       
