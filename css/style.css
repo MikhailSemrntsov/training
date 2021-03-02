@@ -651,13 +651,16 @@ body {
 
 @media screen and (max-width: 480px) {
   .hero__info {
-    width: 304px;
+    width: 319px;
+    height: 368px;
     position: static;
     margin: auto;
+    padding-top: 27px;
   }
   .hero__title {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 20px;
   }
   .robin {
     width: 360px;
@@ -672,6 +675,19 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .icon-logo {
+    left: 20px;
+    top: 25px;
+  }
+  .menu {
+    height: 72px;
+  }
+  .button-visible {
+    height: 21px;
+    position: absolute;
+    top: 22px;
+    right: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
