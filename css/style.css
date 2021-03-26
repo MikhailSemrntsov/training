@@ -557,40 +557,85 @@ body {
   font-size: 55px;
   line-height: 66px;
   color: #FFFFFF;
+  margin-top: 9px;
+  margin-bottom: 40px;
 }
 
-.google {
+.company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.google, .facebook, .dribble {
   width: 416px;
   min-height: 247px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.google__item--number {
+.google__item--number, .facebook__item--number, .dribble__item--number {
   width: 126px;
   height: 141px;
   color: #8491A0;
   font-size: 117px;
   line-height: 141px;
+  margin-bottom: -26px;
 }
 
-.google__item--color {
-  color: #3CC74E;
+.google__item--color, .facebook__item--color, .dribble__item--color {
   font-weight: bold;
   font-size: 24px;
   line-height: 150%;
 }
 
-.google__item--place {
+.google__item--place, .facebook__item--place, .dribble__item--place {
   font-weight: bold;
   font-size: 24px;
   line-height: 150%;
   color: #fff;
 }
 
-.google__item--comment {
+.google__item--comment, .facebook__item--comment, .dribble__item--comment {
   width: 368px;
   color: #8491A0;
   font-size: 16px;
   line-height: 150%;
+}
+
+.google__item--width {
+  width: 345px;
+}
+
+.google__item--color {
+  color: #3CC74E;
+}
+
+.facebook__item--width {
+  width: 327px;
+}
+
+.facebook__item--color {
+  color: #609BFF;
+}
+
+.dribble__item--width {
+  width: 327px;
+}
+
+.dribble__item--color {
+  color: #E95D90;
 }
 
 @media screen and (max-width: 1200px) {
