@@ -572,21 +572,15 @@ body {
 
 .google, .facebook, .dribble {
   width: 416px;
-  min-height: 247px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.google__item--width, .facebook__item--width, .dribble__item--width {
+  width: 400px;
+  margin-top: 27px;
 }
 
 .google__item--number, .facebook__item--number, .dribble__item--number {
-  width: 126px;
+  width: 345px;
   height: 141px;
   color: #8491A0;
   font-size: 117px;
@@ -612,26 +606,27 @@ body {
   color: #8491A0;
   font-size: 16px;
   line-height: 150%;
+  margin-top: 22px;
 }
 
-.google__item--width {
-  width: 345px;
+.google {
+  min-height: 247px;
 }
 
 .google__item--color {
   color: #3CC74E;
 }
 
-.facebook__item--width {
-  width: 327px;
+.facebook {
+  min-height: 247px;
 }
 
 .facebook__item--color {
   color: #609BFF;
 }
 
-.dribble__item--width {
-  width: 327px;
+.dribble {
+  min-height: 272px;
 }
 
 .dribble__item--color {

@@ -26,14 +26,13 @@
   justify-content: space-between
 
 .google, .facebook, .dribble
-  width: 416px
-  min-height: 247px
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 416px   
   &__item
+    &--width
+      width: 400px
+      margin-top: 27px
     &--number
-      width: 126px
+      width: 345px
       height: 141px
       color: #8491A0
       font-size: 117px;
@@ -52,24 +51,21 @@
       width: 368px
       color: #8491A0
       font-size: 16px;
-      line-height: 150%;  
+      line-height: 150%; 
+      margin-top: 22px
 .google
-  &__item
-    &--width
-      width: 345px
+  min-height: 247px
+  &__item         
     &--color
       color: #3CC74E
 .facebook
-  &__item
-    &--width
-      width: 327px
+  min-height: 247px
+  &__item    
     &--color
       color: #609BFF
 .dribble
-
-  &__item
-    &--width
-      width: 327px
+  min-height: 272px
+  &__item  
     &--color
       color: #E95D90
     &--number
