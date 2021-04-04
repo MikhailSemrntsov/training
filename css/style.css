@@ -650,6 +650,21 @@ body {
   .main__left-background {
     width: 450px;
   }
+  .container {
+    max-width: 960px;
+  }
+  .google, .facebook, .dribble {
+    width: 250px;
+  }
+  .google__item--width, .facebook__item--width, .dribble__item--width {
+    width: 240px;
+  }
+  .google__item--number, .facebook__item--number, .dribble__item--number {
+    width: 240px;
+  }
+  .google__item--comment, .facebook__item--comment, .dribble__item--comment {
+    width: 240px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -674,6 +689,21 @@ body {
     width: 384px;
     height: 650px;
     background-image: url(../img/robin768.jpg);
+  }
+  .container {
+    max-width: 748px;
+  }
+  .google, .facebook, .dribble {
+    width: 200px;
+  }
+  .google__item--width, .facebook__item--width, .dribble__item--width {
+    width: 190px;
+  }
+  .google__item--number, .facebook__item--number, .dribble__item--number {
+    width: 195px;
+  }
+  .google__item--comment, .facebook__item--comment, .dribble__item--comment {
+    width: 195px;
   }
 }
 
@@ -706,6 +736,27 @@ body {
   }
   .main__left-background {
     display: none;
+  }
+  .experience-wrapper {
+    padding-top: 80px;
+  }
+  .experience-title__title--text {
+    width: 688px;
+  }
+  .container {
+    max-width: 688px;
+  }
+  .google, .facebook, .dribble {
+    width: 213px;
+  }
+  .google__item--width, .facebook__item--width, .dribble__item--width {
+    width: 195px;
+  }
+  .google__item--number, .facebook__item--number, .dribble__item--number {
+    width: 195px;
+  }
+  .google__item--comment7, .facebook__item--comment7, .dribble__item--comment7 {
+    width: 195px;
   }
 }
 
