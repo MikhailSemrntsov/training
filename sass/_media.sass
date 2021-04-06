@@ -123,19 +123,79 @@
     margin: auto;
   .navbar
     display: none;
-  .button-visible
-    background-color: #000
-    border: none
-    outline: none   
-    display: block; 
-    cursor: pointer;
-    &__menu
-      width: 21px
-      height: 2px
-      background-color: #fff
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 200
+    background-color: #000    
+    &__visible
       display: block
-      margin-top: 5px;
-      background-color: #fff;
+      padding-right: 0
+  .navbar__link
+    font-size: 20px
+  .link
+  // кнопка меню бургер
+  
+  #menuToggle
+    overflow: hidden;
+    position: absolute;
+    // width: 30px;
+    // height: 30px;
+    z-index: 200
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 25px
+    right: 20px
+  #menuToggle input
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; /* hide input */
+    z-index: 1; /* top of the menu */
+  #menuToggle span
+    width: 24px;
+    height: 5px;
+    margin-bottom: 3px;
+    background: #7f8fa6;
+    border-radius: 4px;
+    -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+    transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  #span1
+    transform-origin: 4px 0px;
+  #span3
+    transform-origin: bottom right
+  #menuToggle input:checked ~ #span1
+    background-color: #7f8fa6;
+    transform: rotate(45deg) translate(5px);
+  #menuToggle input:checked ~ #span2
+    background-color: #7f8fa6;
+    transform: rotate(495deg) translate(1px);
+  #menuToggle input:checked ~ #span3
+    background-color: #7f8fa6;
+    transform: rotate(45deg);
+    opacity: 0;
+  // .button-visible
+  //   background-color: #000
+  //   border: none
+  //   outline: none   
+  //   display: block; 
+  //   cursor: pointer;
+  //   &__menu
+  //     width: 21px
+  //     height: 2px
+  //     background-color: #fff
+  //     display: block
+  //     margin-top: 5px;
+  //     background-color: #fff;
   .container
     max-width: 470px
   .experience-title
@@ -143,8 +203,7 @@
       &--text
         width: 470px
         font-size: 32px
-        line-height: 38px
-  
+        line-height: 38px  
   .company
     flex-direction: column
   .google, .facebook, .dribble  
@@ -190,6 +249,8 @@
     position: absolute;
     top: 22px;
     right: 15px;
+  .experience
+    border-top: 1px dashed #fff;
   .experience-wrapper
     padding-top: 45px
   .container
