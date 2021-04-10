@@ -620,8 +620,11 @@ body {
 }
 
 .philosophy__image {
-  width: 720px;
+  width: 50%;
   min-height: 600px;
+  background-image: url(../img/philosophy-img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   object-fit: cover;
 }
 
@@ -631,12 +634,16 @@ body {
 }
 
 .philosophy__content {
-  width: 720px;
+  width: 50%;
   min-height: 600px;
-  padding: 85px 72px 130px 72px;
+  padding-top: 85px;
+  padding-right: 72px;
+  padding-bottom: 126px;
+  padding-left: 72px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: #FFF3E4;
 }
 
 .philosophy__title-text {
@@ -657,8 +664,19 @@ body {
   color: #5B6876;
 }
 
+.philosophy__content-down {
+  width: 116px;
+  height: 22px;
+}
+
 .philosophy__content-down--text {
   color: #181823;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.philosophy__hr {
+  margin-top: 4px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -721,7 +739,7 @@ body {
     max-width: 748px;
   }
   .google, .facebook, .dribble {
-    width: 200px;
+    width: 212px;
   }
   .google__item--width, .facebook__item--width, .dribble__item--width {
     width: 190px;
@@ -731,6 +749,12 @@ body {
   }
   .google__item--comment, .facebook__item--comment, .dribble__item--comment {
     width: 195px;
+  }
+  .philosophy__content {
+    padding: 85px 40px 130px 40px;
+  }
+  .philosophy__some-title {
+    max-width: 304px;
   }
 }
 
@@ -766,12 +790,27 @@ body {
   }
   .experience-wrapper {
     padding-top: 80px;
+    min-height: 758px;
   }
   .experience-title__title--text {
     width: 688px;
   }
   .container {
     max-width: 688px;
+  }
+  .philosophy__image {
+    background-image: url(../img/philosophy-img768.jpg);
+  }
+  .philosophy__content {
+    min-height: 600px;
+    padding: 45px 40px 85px 40px;
+  }
+  .philosophy__some-title {
+    max-width: 576px;
+  }
+  .philosophy__title-text {
+    font-size: 55px;
+    line-height: 66px;
   }
 }
 
