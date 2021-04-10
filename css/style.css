@@ -838,6 +838,16 @@ body {
   .google__item--comment, .facebook__item--comment, .dribble__item--comment {
     width: 170px;
   }
+  .philosophy-wrapper {
+    flex-direction: column;
+  }
+  .philosophy__content {
+    width: 100%;
+    min-height: 500px;
+  }
+  .philosophy__image {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -892,7 +902,7 @@ body {
     width: 24px;
     height: 5px;
     margin-bottom: 3px;
-    background: #7f8fa6;
+    background: #C4C4C4;
     border-radius: 4px;
     transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
   }
@@ -903,15 +913,15 @@ body {
     transform-origin: bottom right;
   }
   #menuToggle input:checked ~ #span1 {
-    background-color: #7f8fa6;
+    background-color: #C4C4C4;
     transform: rotate(45deg) translate(5px);
   }
   #menuToggle input:checked ~ #span2 {
-    background-color: #7f8fa6;
+    background-color: #C4C4C4;
     transform: rotate(495deg) translate(1px);
   }
   #menuToggle input:checked ~ #span3 {
-    background-color: #7f8fa6;
+    background-color: #C4C4C4;
     transform: rotate(45deg);
     opacity: 0;
   }
@@ -1011,6 +1021,28 @@ body {
   }
   .dribble {
     margin-bottom: 30px;
+  }
+  .philosophy__title-text {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+  .philosophy__title {
+    width: 320px;
+  }
+  .philosophy__some-title {
+    width: 320px;
+  }
+  .philosophy__content {
+    min-height: 450px;
+    padding: 22px 20px 50px 20px;
+  }
+  .philosophy__hr {
+    margin-top: -2px;
+  }
+  .philosophy__image {
+    min-height: 450px;
+    background-image: url(../img/philosophy-img360.jpg);
   }
 }
 /*# sourceMappingURL=style.css.map */

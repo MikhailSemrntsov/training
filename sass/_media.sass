@@ -131,6 +131,17 @@
         width: 180px
       &--comment
         width: 170px
+  .philosophy-wrapper
+    flex-direction: column
+  .philosophy
+    &__content
+      width: 100%
+      min-height: 500px
+    &__image
+      width: 100%
+
+
+
 @media screen and ( max-width: 576px )
   .menu
     width: 96%
@@ -154,6 +165,7 @@
   .navbar__link
     font-size: 20px
   .link
+
   // кнопка меню бургер
   
   #menuToggle
@@ -180,7 +192,7 @@
     width: 24px;
     height: 5px;
     margin-bottom: 3px;
-    background: #7f8fa6;
+    background: #C4C4C4;
     border-radius: 4px;
     -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
     -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
@@ -192,13 +204,13 @@
   #span3
     transform-origin: bottom right
   #menuToggle input:checked ~ #span1
-    background-color: #7f8fa6;
+    background-color: #C4C4C4;
     transform: rotate(45deg) translate(5px);
   #menuToggle input:checked ~ #span2
-    background-color: #7f8fa6;
+    background-color: #C4C4C4;
     transform: rotate(495deg) translate(1px);
   #menuToggle input:checked ~ #span3
-    background-color: #7f8fa6;
+    background-color: #C4C4C4;
     transform: rotate(45deg);
     opacity: 0;
   // .button-visible
@@ -295,3 +307,20 @@
     margin-bottom: 30px
   .dribble
     margin-bottom: 30px
+  .philosophy
+    &__title-text
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 20px
+    &__title
+      width: 320px
+    &__some-title
+      width: 320px
+    &__content
+      min-height: 450px
+      padding: 22px 20px 50px 20px
+    &__hr
+      margin-top: -2px
+    &__image
+      min-height: 450px
+      background-image: url(../img/philosophy-img360.jpg)
