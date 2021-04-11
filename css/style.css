@@ -393,28 +393,28 @@ body {
 }
 
 .navbar__title:nth-child(1) {
-  width: 132px;
+  width: 110px;
   height: 88px;
   padding: 32px 13px;
   grid-column: 2;
 }
 
 .navbar__title:nth-child(2) {
-  width: 88px;
+  width: 67px;
   height: 88px;
   padding: 32px 13px;
   grid-column: 3;
 }
 
 .navbar__title:nth-child(3) {
-  width: 147px;
+  width: 126px;
   height: 88px;
   padding: 32px 13px;
   grid-column: 4;
 }
 
 .navbar__title:nth-child(4) {
-  width: 109px;
+  width: 89px;
   height: 88px;
   padding: 32px 13px;
   grid-column: 5;
@@ -679,6 +679,13 @@ body {
   margin-top: 4px;
 }
 
+.philosophy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 390px;
+}
+
 @media screen and (max-width: 1200px) {
   .robin {
     width: 600px;
@@ -756,6 +763,10 @@ body {
   .philosophy__some-title {
     max-width: 304px;
   }
+  .philosophy-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -766,7 +777,7 @@ body {
     left: 40px;
   }
   .navbar {
-    padding-right: 40px;
+    padding-right: 0px;
   }
   .main {
     background-color: #000000;
@@ -797,6 +808,9 @@ body {
   }
   .container {
     max-width: 688px;
+  }
+  .philosophy-container {
+    min-height: 470px;
   }
   .philosophy__image {
     background-image: url(../img/philosophy-img768.jpg);
@@ -841,9 +855,14 @@ body {
   .philosophy-wrapper {
     flex-direction: column;
   }
+  .philosophy-container {
+    min-height: 350px;
+  }
   .philosophy__content {
     width: 100%;
     min-height: 500px;
+    padding: 45px 0px 85px 0px;
+    margin: auto;
   }
   .philosophy__image {
     width: 100%;
@@ -948,6 +967,9 @@ body {
   .google__item--comment, .facebook__item--comment, .dribble__item--comment {
     width: 380px;
   }
+  .philosophy-container {
+    max-width: 470px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1043,6 +1065,9 @@ body {
   .philosophy__image {
     min-height: 450px;
     background-image: url(../img/philosophy-img360.jpg);
+  }
+  .philosophy-container {
+    min-height: 376px;
   }
 }
 /*# sourceMappingURL=style.css.map */

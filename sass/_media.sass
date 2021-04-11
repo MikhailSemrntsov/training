@@ -60,6 +60,9 @@
       padding: 85px 40px 130px 40px
     &__some-title
       max-width: 304px
+  .philosophy-container
+    margin-left: auto
+    margin-right: auto
 
 @media screen and ( max-width: 768px )
   .header
@@ -67,7 +70,7 @@
   .icon-logo
     left: 40px;
   .navbar
-    padding-right: 40px;
+    padding-right: 0px;
   .main
     background-color: #000000
   .robin
@@ -95,13 +98,14 @@
         width: 688px
   .container
      max-width: 688px
+  .philosophy-container
+    min-height: 470px
   .philosophy
     &__image
       background-image: url(../img/philosophy-img768.jpg)
     &__content
       min-height: 600px
       padding: 45px 40px 85px 40px
-
     &__some-title
       max-width: 576px
     &__some-title--text
@@ -133,10 +137,14 @@
         width: 170px
   .philosophy-wrapper
     flex-direction: column
+  .philosophy-container
+    min-height: 350px
   .philosophy
     &__content
       width: 100%
       min-height: 500px
+      padding: 45px 0px 85px 0px
+      margin: auto       
     &__image
       width: 100%
 
@@ -245,7 +253,8 @@
         width: 380px
       &--comment
         width: 380px
-
+  .philosophy-container
+    max-width: 470px
 
 @media screen and ( max-width: 480px )
   .hero
@@ -324,3 +333,5 @@
     &__image
       min-height: 450px
       background-image: url(../img/philosophy-img360.jpg)
+  .philosophy-container
+    min-height: 376px
