@@ -652,6 +652,7 @@ body {
   line-height: 66px;
   color: #181823;
   margin-bottom: 24px;
+  margin-top: 36px;
 }
 
 .philosophy__some-title {
@@ -684,6 +685,75 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 390px;
+}
+
+.skills {
+  background-color: #000;
+}
+
+.skills__h {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  margin-top: 19px;
+  margin-bottom: 14px;
+}
+
+.skills__p {
+  max-width: 368px;
+  color: #8491A0;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 416px 416px 416px;
+  grid-template-rows: 72px 176px 176px 95px;
+  grid-gap: 48px 24px;
+}
+
+.skills__skillset {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+.skills__skillset-title {
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 66px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.skills__skillset-some-title {
+  max-width: 368px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #8491A0;
+}
+
+.skills__product {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.skills__visual {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.skills__motion {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.skills__photography {
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 @media screen and (max-width: 1200px) {
